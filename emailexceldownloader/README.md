@@ -65,4 +65,5 @@ mvn clean install
 mvn spring-boot:run
 
 Open your browser at http://localhost:8080/.
+
 Click Download Latest Excel to fetch the latest Excel attachment from your inbox.
