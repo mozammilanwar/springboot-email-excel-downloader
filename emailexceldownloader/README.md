@@ -58,12 +58,23 @@ spring.mail.properties.mail.store.protocol=imaps
 
 file.save-dir=C:/excel-downloads
 
-Ensure the save directory exists or will be auto-created.
+3. Ensure the save directory exists or will be auto-created.
 
 Build and run the project:
 mvn clean install
 mvn spring-boot:run
 
-Open your browser at http://localhost:8080/.
+4. Open your browser at http://localhost:8080/.
 
-Click Download Latest Excel to fetch the latest Excel attachment from your inbox.
+5. Click Download Latest Excel to fetch the latest Excel attachment from your inbox.
+
+# Notes
+
+Only .xlsx attachments are processed.
+
+Loops from latest to oldest emails, stopping at the first Excel attachment found.
+
+Save path can be changed in application.properties.
+
+Works for Gmail; for other email providers, adjust IMAP host/port accordingly.
+
